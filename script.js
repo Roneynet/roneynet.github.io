@@ -16,8 +16,8 @@ const toggleIcon = toggleButton.querySelector('span');
 // Check local storage for dark mode preference
 if (localStorage.getItem('dark-mode') === 'enabled') {
   body.classList.add('dark-mode');
-  toggleIcon.textContent = '☀️'; // Sun icon for light mode
-  toggleButton.innerHTML = '<span>☀️</span> Light Mode';
+  toggleIcon.textContent = '☀️';
+  toggleButton.innerHTML = '<span>☀️</span>';
 }
 
 // Toggle dark mode and save preference
@@ -27,10 +27,10 @@ toggleButton.addEventListener('click', () => {
   if (body.classList.contains('dark-mode')) {
     localStorage.setItem('dark-mode', 'enabled');
     toggleIcon.textContent = '☀️';
-    toggleButton.innerHTML = '<span>☀️</span> Light Mode';
+    toggleButton.innerHTML = '<span>☀️</span>';
   } else {
     localStorage.setItem('dark-mode', 'disabled');
     toggleIcon.textContent = '🌙';
-    toggleButton.innerHTML = '<span>🌙</span> Dark Mode';
+    toggleButton.innerHTML = '<span>🌙</span>';
   }
 });
