@@ -94,15 +94,15 @@ header p {
 }
 
 .dark-mode footer {
-  background: #0d0d0d;
+  background: linear-gradient(135deg, #6a0dad, #3a007d);
   color: #e0e0e0;
 }
 
-.dark-mode a {
+.dark-mode footer a {
   color: #a670ff;
 }
 
-.dark-mode a:hover {
+.dark-mode footer a:hover {
   color: #e74c3c;
 }
 
@@ -217,7 +217,7 @@ footer {
   padding: 2rem;
   background: var(--secondary-color);
   color: white;
-  margin-top: 2rem;
+  margin-top: auto;
 }
 
 footer a {
